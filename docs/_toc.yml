@@ -1,0 +1,9 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+chapters:
+- file: Análisis Exploratorio de Datos
+- file: Modelos estadísticos
+- file: Modelos de Deep Learning
