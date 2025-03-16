@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -62,8 +62,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'Análisis Exploratorio de Datos';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Ejercicio 2" href="Modelos%20estad%C3%ADsticos.html" />
-    <link rel="prev" title="Notebooks with MyST Markdown" href="markdown-notebooks.html" />
+    <link rel="next" title="Ejercicio 1" href="An%C3%A1lisis%20Exploratorio%20de%20Datos1.html" />
+    <link rel="prev" title="Parcial final de serie de tiempo" href="intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -182,10 +182,8 @@
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown Files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="notebooks.html">Content with notebooks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Ejercicio 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="An%C3%A1lisis%20Exploratorio%20de%20Datos1.html">Ejercicio 1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Modelos%20estad%C3%ADsticos.html">Ejercicio 2</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Modelos%20de%20Deep%20Learning.html">Ejercicio 3</a></li>
 </ul>
@@ -383,7 +381,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-exploratorio-de-datos-20">Análisis Exploratorio de Datos 20%</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-exploratoriio-de-datos-20">Análisis Exploratoriio de Datos 20%</a></li>
 </ul>
             </nav>
         </div>
@@ -397,29 +395,33 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="ejercicio-1">
 <h1>Ejercicio 1<a class="headerlink" href="#ejercicio-1" title="Link to this heading">#</a></h1>
-<section id="analisis-exploratorio-de-datos-20">
-<h2>Análisis Exploratorio de Datos 20%<a class="headerlink" href="#analisis-exploratorio-de-datos-20" title="Link to this heading">#</a></h2>
-<p>(I) Considere la serie de tiempo asociada con las acciones de Bitcoin (ver <a class="reference external" href="https://github.com/lihkir/Data/blob/main/btc_15m_data_2018_to_2025.csv"><span style="color:#FF6F61">Bitcoin data</span></a> importe directamente con el link y pd.read_csv). Realice un <a class="reference external" href="https://lihkir.github.io/TimeSeries/statistical_background.html#analisis-exploratorio-de-datos-eda"><span style="color:#FF6F61">Análisis Exploratorio de datos (EDA)</span></a> considerando cada una de las metodología abordadas durante el curso. <em>Es crucial que en todos los ejercicios de la presente evaluación, cada figura descriptiva, tabla o resumen de resultados, cuente con su respectiva interpretación</em></p>
+<section id="analisis-exploratoriio-de-datos-20">
+<h2>Análisis Exploratoriio de Datos 20%<a class="headerlink" href="#analisis-exploratoriio-de-datos-20" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Considere la serie de tiempo asociada con las acciones de Bitcoin (ver <strong>(<a class="reference external" href="https://github.com/lihkir/Data/blob/main/btc_15m_data_2018_to_2025.csv">Bitcoin data</a>)</strong> importe directamente con el link y pd.read_csv). Realice un <strong><a class="reference external" href="https://lihkir.github.io/TimeSeries/statistical_background.html#analisis-exploratorio-de-datos-eda">Análisis Exploratorio de Datos (EDA)</a></strong> considerando cada una de las metodología abordadas durante el curso. Es crucial que en todos los ejercicios de la presente evaluación, cada figura descriptiva, tabla o resumen de resultados, cuente con su respectiva interpretación</p></li>
+</ol>
 <ul class="simple">
-<li><p>Utilice el conjunto de datos asociados con el precio de Bitcoin, ver <strong><a class="reference internal" href="#"><span class="xref myst">Bitcoin data</span></a></strong>. Considere para las predicciones con modelos de series de tiempo, la columna <strong>Price</strong>.</p></li>
-<li><p>Identifique si existen datos faltantes y realice su <span style="color:#FF69B4">imputación</span> usando alguna de las técnicas básicas estudiadas durante el curso.</p></li>
-<li><p>Realice un <span style="color:#FF69B4">grafico de velas</span> utilizando la librería <strong>Plotly</strong> para la serie de tiempo (columna <strong>Price</strong>).<br />
-Realice también un histograma con <strong>Plotly</strong> para representar el volumen tradeado diariamente (<strong><span style="color:#4169E1">Volume</span></strong>).</p></li>
-<li><p>Realice <span style="color:#FF69B4">graficos de subseries</span> considerando agrupación por <em>semana, mes y año</em>.<br />
-Utilice gráficos de <em>series de tiempo</em> y <em>boxplots</em> para analizar estas subseries.</p></li>
-<li><p>Estudie estacionariedad de la serie de tiempo usando la <strong>ACF</strong> estudiada durante el curso,<br />
-así como también los respectivos test estadísticos tales como <strong><span style="color:#FF69B4">Ljung-Box</span></strong> y <strong><span style="color:#FF69B4">Dickey Fuller</span></strong>.<br />
-Aplique además las transformaciones necesarias para convertir la serie de tiempo en estacionaria.</p></li>
-<li><p>Mediante <span style="color:#FF69B4">agregación por grupos</span> analice el comportamiento de la media y desviación estándar,<br />
-agrupando por <em>semanas, días, meses</em>. Además, para estas agrupaciones, calcule <span style="color:#FF69B4">estadísticos móviles</span>.<br />
-Dibuje la distribución de frecuencias para diferentes <em>lags</em> como se realizó en las notas del curso.</p></li>
+<li><p>Utilice el conjunto de datos asociados con el precio de Bitcoin, ver <strong>(<a class="reference external" href="https://raw.githubusercontent.com/lihkir/Data/refs/heads/main/Bitcoin%20Historical%20Data.csv">Bitcoin data</a>)</strong>. Considere para las predicciones con modelos de series de tiempo, la columna Price</p></li>
+<li><p>Identifique si existen datos faltantes y realice su imputación usando alguna de las técnicas básicas estudiadas durante el curso.</p></li>
+<li><p>Realice un grafico de velas utilizando la librería Plotly para la serie de tiempo (columna Price). Realice también un histograma con Plotly para representar el volumen tradeado diariamente (Volume)</p></li>
+<li><p>Realice graficos de subseries considerando agrupación por semana, mes y año. Utilice graficos de series de tiempo y boxplots para analizar estas subseries.</p></li>
+<li><p>Estudie estacionariedad de la serie de tiempo usando la ACF estudiada durante el curso, así como también los respectivos test estadísticos tales como Ljung-Box y Dickey Fuller. Aplique además las transformaciones necesarias para convertir la serie de tiempo en estacionaria.</p></li>
+<li><p>Mediante agregación por grupos analice el comportamiento de la media y desviación estándar, agrupando por semanas, días, meses. Además, para estas agrupaciones, calcule estadísticos móviles. Dibuje la distribución de frecuencias para diferentes lags como se realizó en las notas del curso.</p></li>
 <li><p>Aplique las medias moviles <span class="math notranslate nohighlight">\(\widehat{M}_t^{(2)}\)</span>, <span class="math notranslate nohighlight">\(\widehat{M}_t^{(2)(t,t+1)}\)</span>, <span class="math notranslate nohighlight">\(\widehat{M}_t^{(4)}\)</span>, <span class="math notranslate nohighlight">\(\widehat{M}_t^{(4)(t,t+1)}\)</span>, <span class="math notranslate nohighlight">\(\widehat{M}_t^{(3)}\)</span> y <span class="math notranslate nohighlight">\(\widehat{M}_t^{(3)(t-1,t+1)}\)</span> a las serie del precio de cierre de BTC-USD. Posteriormente, uselas para remover tendencia y aplique la prueba de Dickey Fuller y LJung Box para verificar si se logró estacionariedad</p></li>
-<li><p>Realice descomposición de la serie temporal del precio de cierre de <strong>BTC-USD</strong> usando <span style="color:#FF69B4">medias móviles</span>        y además usando la librería <strong>statsmodels.tsa</strong>. Verifique al final independencia de los residuos mediante la prueba de <strong>Ljung Box</strong>.</p></li>
+<li><p>Realice descomposición de la serie temporal del precio de cierre de BTC-USD usando medias moviles y además usando la librería statsmodels.tsa. Verifique al final independencia de los residuos mediante la prueba de LJung Box.</p></li>
 </ul>
-<p>(II) Repita el análisis anterior para las series de tiempo de: retorno acumulado diario y volatilidad, para diferentes ventanas. Para esto tenga en cuenta las siguientes definiciones e implemente manualmente las funciones que definen cada serie de tiempo</p>
+<ol class="arabic simple" start="2">
+<li><p>Repita el análisis anterior para las series de tiempo de: retorno acumulado diario y volatilidad, para diferentes ventanas. Para esto tenga en cuenta las siguientes definiciones e implemente manualmente las funciones que definen cada serie de tiempo</p></li>
+</ol>
 <ul class="simple">
-<li><p>Retorno aculumado diario <span class="math notranslate nohighlight">\({A_t}{t=1}^T\)</span> donde <span class="math notranslate nohighlight">\(A_t = \sum{j=1}^t R_j\)</span>, con <span class="math notranslate nohighlight">\(R_t = \frac{P_t - P_{t-1}}{P_{t-1}}\)</span>, (1) donde <span class="math notranslate nohighlight">\(P_{t,t=1,2,...,.T}\)</span> es la columna Price en el dataset de Bitcoin y T es el tiempo final.</p></li>
-<li><p>La volatilidad <span class="math notranslate nohighlight">\({\sigma_t}{t=1}^T\)</span> es la desviación estándar de los retornos diarios <span class="math notranslate nohighlight">\(\sigma = std(R_1, R_2, \ldots, R\omega)\)</span> donde <span class="math notranslate nohighlight">\(\omega = 7, 14, 21, 28\)</span>, (2) siendo <span class="math notranslate nohighlight">\(\omega\)</span> el número de retornos diarios considerados para calcular la desviación estándar <span class="math notranslate nohighlight">\(std(R_1, R_2, \ldots, R_\omega) = \sqrt{\frac{1}{\omega - 1}\sum_{t=1}^\omega (R_t - \mu)}\)</span>, <span class="math notranslate nohighlight">\(\mu = \frac{1}{\omega}\sum_{t=1}^\omega R_t\)</span>, (3) obtenida por ventanas móviles de longitud <span class="math notranslate nohighlight">\(\omega\)</span>, donde <span class="math notranslate nohighlight">\(\omega\)</span> está dado en días, y esta desviación es calculada sobre la serie de retornos diarios. Para cada ventata <span class="math notranslate nohighlight">\(\omega\)</span> repita el ítem (I).</p></li>
+<li><p>Retorno aculumado diario <span class="math notranslate nohighlight">\({A_t}{t=1}^T\)</span> donde
+<span class="math notranslate nohighlight">\(A_t = \sum{j=1}^t R_j\)</span>, con <span class="math notranslate nohighlight">\(R_t = \frac{P_t - P_{t-1}}{P_{t-1}}\)</span>, (1)
+donde <span class="math notranslate nohighlight">\(P_{t,t=1,2,...,.T}\)</span> es la columna Price en el dataset de Bitcoin y T es el tiempo final.</p></li>
+<li><p>La volatilidad <span class="math notranslate nohighlight">\({\sigma_t}{t=1}^T\)</span> es la desviación estándar de los retornos diarios
+<span class="math notranslate nohighlight">\(\sigma = std(R_1, R_2, \ldots, R\omega)\)</span> donde <span class="math notranslate nohighlight">\(\omega = 7, 14, 21, 28\)</span>, (2)
+siendo <span class="math notranslate nohighlight">\(\omega\)</span> el número de retornos diarios considerados para calcular la desviación estándar
+<span class="math notranslate nohighlight">\(std(R_1, R_2, \ldots, R_\omega) = \sqrt{\frac{1}{\omega - 1}\sum_{t=1}^\omega (R_t - \mu)}\)</span>, <span class="math notranslate nohighlight">\(\mu = \frac{1}{\omega}\sum_{t=1}^\omega R_t\)</span>, (3)
+obtenida por ventanas móviles de longitud <span class="math notranslate nohighlight">\(\omega\)</span>, donde <span class="math notranslate nohighlight">\(\omega\)</span> está dado en días, y esta desviación es calculada sobre la serie de retornos diarios. Para cada ventata <span class="math notranslate nohighlight">\(\omega\)</span> repita el ítem (I).</p></li>
 </ul>
 </section>
 </section>
@@ -455,20 +457,20 @@ Dibuje la distribución de frecuencias para diferentes <em>lags</em> como se rea
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="markdown-notebooks.html"
+       href="intro.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Notebooks with MyST Markdown</p>
+        <p class="prev-next-title">Parcial final de serie de tiempo</p>
       </div>
     </a>
     <a class="right-next"
-       href="Modelos%20estad%C3%ADsticos.html"
+       href="An%C3%A1lisis%20Exploratorio%20de%20Datos1.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Ejercicio 2</p>
+        <p class="prev-next-title">Ejercicio 1</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -488,7 +490,7 @@ Dibuje la distribución de frecuencias para diferentes <em>lags</em> como se rea
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-exploratorio-de-datos-20">Análisis Exploratorio de Datos 20%</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-exploratoriio-de-datos-20">Análisis Exploratoriio de Datos 20%</a></li>
 </ul>
   </nav></div>
 

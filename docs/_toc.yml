@@ -5,6 +5,5 @@ format: jb-book
 root: intro
 chapters:
 - file: Análisis Exploratorio de Datos
-- file: Análisis Exploratorio de Datos1
 - file: Modelos estadísticos
 - file: Modelos de Deep Learning
